@@ -193,7 +193,9 @@ const Tab1: React.FC = () => {
               >
                 <IonCol style={{ height: 60, paddingTop: 20 }} size='8'>
                   <IonText>
-                    Los Angeles <br /> Annual Marathon
+                    <b>
+                      Los Angeles <br /> Annual Marathon
+                    </b>
                   </IonText>
                 </IonCol>
                 <IonCol style={{ height: 60, paddingTop: 10 }} size='4'>
@@ -201,7 +203,9 @@ const Tab1: React.FC = () => {
                     <b style={{ fontSize: 25 }}>21</b>
                   </IonText>
                   <br />
-                  <IonText>November</IonText>
+                  <IonText>
+                    <b>November</b>
+                  </IonText>
                 </IonCol>
               </IonRow>
             </div>
