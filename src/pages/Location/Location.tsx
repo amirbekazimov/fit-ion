@@ -36,7 +36,7 @@ const Location: React.FC = () => {
       <IonHeader class='ion-head-color location-page-toolbar'>
         <IonGrid>
           <IonRow>
-            <IonToolbar class='ion-head-color ion-color location-page-toolbar'>
+            <IonToolbar class='ion-color'>
               <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
                 <IonAvatar>
                   <img
@@ -52,7 +52,7 @@ const Location: React.FC = () => {
                 <IonButton
                   fill='outline'
                   shape='round'
-                  style={{ width: '85px' }}
+                  style={{ width: '77px', height: '40px' }}
                 >
                   <IonText>Join</IonText>
                 </IonButton>
@@ -102,7 +102,7 @@ const Location: React.FC = () => {
                       <IonIcon size='large' icon={locationOutline} />
                     </div>
                     <IonText>
-                      <b>
+                      <b style={{ fontSize: 23 }}>
                         {' '}
                         NOW AT: <br /> WEST ALFRIDGE ST.27
                       </b>
@@ -111,14 +111,14 @@ const Location: React.FC = () => {
                 </div>
               </div>
 
-              <IonRow style={{ width: '100%' }}>
+              <IonRow style={{ width: '100%', paddingTop: 33 }}>
                 <IonCol size='8'>
                   <IonText>
                     <b>Length 7.5 km</b>
                   </IonText>
                 </IonCol>
                 <IonCol size='4'>
-                  <IonText>
+                  <IonText style={{ fontSize: 15 }}>
                     <b>Age: from 18</b>
                   </IonText>
                 </IonCol>
@@ -131,7 +131,7 @@ const Location: React.FC = () => {
           <IonRow>
             <IonCol size='8'>
               <IonText color='light'>
-                <b style={{ fontSize: 75 }}>12:14</b>
+                <b style={{ fontSize: 93 }}>12:14</b>
               </IonText>
             </IonCol>
             <IonCol size='4'>
@@ -166,26 +166,26 @@ const Location: React.FC = () => {
                   <div
                     style={{
                       display: 'flex',
-                      gap: 5,
+                      gap: 23,
                       height: '100px',
                       width: '100%',
-                      justifyContent: 'space-between',
+                      //   justifyContent: 'space-between',
                     }}
                   >
                     <IonText>
                       Covered
                       <br />
-                      <b style={{ fontSize: 23 }}> 2.4km</b>
+                      <b style={{ fontSize: 33 }}> 2.4km</b>
                     </IonText>
                     <IonText>
                       Speed
                       <br />
-                      <b style={{ fontSize: 23 }}>6km/h</b>
+                      <b style={{ fontSize: 33 }}>6km/h</b>
                     </IonText>
                     <IonText>
                       Left
                       <br />
-                      <b style={{ fontSize: 23 }}>4.6km</b>
+                      <b style={{ fontSize: 33 }}>4.6km</b>
                     </IonText>
                   </div>
                 </div>
@@ -194,15 +194,16 @@ const Location: React.FC = () => {
               <div
                 style={{
                   width: '100%',
-                  height: '80%',
-                  padding: 10,
+                  height: '100%',
+                  paddingBottom: 55,
                 }}
               >
                 <img
                   style={{
                     height: '100%',
                     width: '100%',
-                    borderRadius: '20px',
+                    marginTop: '15px',
+                    borderRadius: '35px',
                   }}
                   src={Maps}
                 />

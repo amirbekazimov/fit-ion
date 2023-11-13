@@ -1,16 +1,22 @@
 .location-page-toolbar {
   background-color: rgb(88, 179, 226);
-  height: 120px;
+  height: 125px;
+  padding-top: 60px;
+  border-radius: 35px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
 
 .location-info-card {
+  margin-top: -5px;
   background-color: rgb(198, 253, 81);
   padding-top: 20px;
-  height: 150px;
+  border-radius: 35px;
+  height: 160px;
 }
 
 .map-info-card {
+  margin-top: 1px;
+  padding-top: 25px;
   background-color: rgb(255, 216, 240);
 }

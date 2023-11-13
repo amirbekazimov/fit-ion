@@ -35,7 +35,7 @@ const Tab1: React.FC = () => {
       <IonHeader class='ion-head-color'>
         <IonGrid>
           <IonRow>
-            <IonToolbar class='ion-head-color ion-color'>
+            <IonToolbar class='ion-color'>
               <IonButtons slot='start'>
                 <IonButton>
                   <IonText class='ion-text-start'>
@@ -71,6 +71,8 @@ const Tab1: React.FC = () => {
               style={{
                 display: 'flex',
                 width: '90%',
+                paddingLeft: 8,
+                paddingRight: 22,
               }}
             >
               <IonCol
@@ -79,7 +81,7 @@ const Tab1: React.FC = () => {
               >
                 <div
                   className='people-icon'
-                  style={{ width: 55, height: 55, background: 'white' }}
+                  style={{ width: 45, height: 45, background: 'white' }}
                 >
                   <IonIcon color='dark' icon={accessibilityOutline} />
                 </div>
@@ -89,7 +91,7 @@ const Tab1: React.FC = () => {
               </IonCol>
               <IonCol>
                 <IonButton
-                  style={{ fontSize: '11px' }}
+                  style={{ fontSize: '12px' }}
                   color='light'
                   shape='round'
                 >
@@ -112,7 +114,7 @@ const Tab1: React.FC = () => {
                   alignItems: 'center',
                 }}
               >
-                <div className='people-icon' style={{ width: '95px' }}>
+                <div className='people-icon' style={{ width: '70px' }}>
                   <IonIcon color='white' icon={accessibilityOutline} />
                 </div>
                 <IonText color='dark'>
@@ -130,7 +132,7 @@ const Tab1: React.FC = () => {
                   alignItems: 'center',
                 }}
               >
-                <div className='people-icon' style={{ width: '75px' }}>
+                <div className='people-icon' style={{ width: '50px' }}>
                   <IonIcon color='white' icon={calendarNumberOutline} />
                 </div>
                 <IonText color='dark'>
@@ -154,7 +156,7 @@ const Tab1: React.FC = () => {
                     width: '100%',
                   }}
                 >
-                  <div style={{ display: 'flex', gap: 5, height: '100px' }}>
+                  <div style={{ display: 'flex', gap: 13, height: '100px' }}>
                     <IonAvatar
                       style={{
                         background: 'red',
@@ -172,7 +174,7 @@ const Tab1: React.FC = () => {
                     </IonText>
                   </div>
                   <IonButton
-                    style={{ fontSize: 11 }}
+                    style={{ fontSize: 12, width: '85px' }}
                     fill='outline'
                     shape='round'
                     color='dark'
@@ -180,7 +182,7 @@ const Tab1: React.FC = () => {
                     <b>Join</b>
                   </IonButton>
                 </div>
-
+                <br />
                 <IonText>International Event</IonText>
               </div>
 
