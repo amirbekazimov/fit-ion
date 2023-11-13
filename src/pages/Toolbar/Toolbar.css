@@ -93,14 +93,15 @@ ion-content {
   display: flex;
   align-items: center;
   padding: 5px;
+  padding-left: 15px;
   right: 0;
   top: 40%;
   display: flex;
   position: absolute;
   color: white;
-  height: 35px;
+  height: 45px;
   text-align: center;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
   background-color: rgb(20, 34, 49);
 }
