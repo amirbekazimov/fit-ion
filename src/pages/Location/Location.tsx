@@ -98,9 +98,9 @@ const Location: React.FC = () => {
                   }}
                 >
                   <div style={{ display: 'flex', alignItems: 'center' }}>
-                    <IonButton fill='clear' color='dark'>
-                      <IonIcon icon={locationOutline} />
-                    </IonButton>
+                    <div style={{ width: '35px' }}>
+                      <IonIcon size='large' icon={locationOutline} />
+                    </div>
                     <IonText>
                       <b>
                         {' '}

@@ -7,7 +7,8 @@
 
 .location-info-card {
   background-color: rgb(198, 253, 81);
-  height: 180px;
+  padding-top: 20px;
+  height: 150px;
 }
 
 .map-info-card {

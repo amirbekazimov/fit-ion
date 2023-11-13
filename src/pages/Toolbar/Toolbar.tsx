@@ -15,7 +15,11 @@ import {
   IonTitle,
   IonToolbar,
 } from '@ionic/react';
-import { notificationsOutline, accessibilityOutline } from 'ionicons/icons';
+import {
+  notificationsOutline,
+  accessibilityOutline,
+  calendarNumberOutline,
+} from 'ionicons/icons';
 import Olympia from '../../assets/images/Screenshot 2023-11-13 at 10.53.51.png';
 import './Toolbar.css';
 
@@ -34,7 +38,12 @@ const Tab1: React.FC = () => {
             <IonToolbar class='ion-head-color ion-color'>
               <IonButtons slot='start'>
                 <IonButton>
-                  Welcome <br /> Bella!
+                  <IonText class='ion-text-start'>
+                    <b>
+                      {' '}
+                      Welcome <br /> Bella!
+                    </b>
+                  </IonText>
                 </IonButton>
               </IonButtons>
               <IonButtons slot='end'>
@@ -58,14 +67,22 @@ const Tab1: React.FC = () => {
       <IonContent class='back' fullscreen>
         <IonGrid>
           <IonRow>
-            <div style={{ display: 'flex' }}>
+            <div
+              style={{
+                display: 'flex',
+                width: '90%',
+              }}
+            >
               <IonCol
-                style={{ display: 'flex', gap: 1, alignItems: 'center' }}
+                style={{ display: 'flex', gap: 5, alignItems: 'center' }}
                 size='10'
               >
-                <IonButton color='white' shape='round'>
-                  <IonIcon color='white' icon={accessibilityOutline} />
-                </IonButton>
+                <div
+                  className='people-icon'
+                  style={{ width: 55, height: 55, background: 'white' }}
+                >
+                  <IonIcon color='dark' icon={accessibilityOutline} />
+                </div>
                 <IonText color='light'>
                   Running pals <br /> Event of the month
                 </IonText>
@@ -86,8 +103,41 @@ const Tab1: React.FC = () => {
         <IonGrid>
           <IonRow>
             <img style={{ width: '100%', borderRadius: 30 }} src={Olympia} />
-            <div className='mozaik-card'></div>
-            <div className='mozaik-card'></div>
+            <div className='mozaik-card'>
+              <div
+                style={{
+                  display: 'flex',
+                  gap: 5,
+                  paddingLeft: 15,
+                  alignItems: 'center',
+                }}
+              >
+                <div className='people-icon' style={{ width: '95px' }}>
+                  <IonIcon color='white' icon={accessibilityOutline} />
+                </div>
+                <IonText color='dark'>
+                  <p>Autumn vibes Next event </p>
+                </IonText>
+              </div>
+            </div>
+            <div className='mozaik-card'>
+              <div
+                style={{
+                  display: 'flex',
+                  gap: 5,
+                  paddingLeft: 25,
+                  paddingTop: 15,
+                  alignItems: 'center',
+                }}
+              >
+                <div className='people-icon' style={{ width: '75px' }}>
+                  <IonIcon color='white' icon={calendarNumberOutline} />
+                </div>
+                <IonText color='dark'>
+                  <p>Nov, Wednesday </p>
+                </IonText>
+              </div>
+            </div>
           </IonRow>
         </IonGrid>
 
@@ -138,15 +188,17 @@ const Tab1: React.FC = () => {
                 <IonText>Participant are allowed to bring their pets</IonText>
               </div>
 
-              <IonRow style={{ width: '100%' }}>
-                <IonCol size='8'>
+              <IonRow
+                style={{ display: 'flex', alignItems: 'center', width: '100%' }}
+              >
+                <IonCol style={{ height: 60, paddingTop: 20 }} size='8'>
                   <IonText>
                     Los Angeles <br /> Annual Marathon
                   </IonText>
                 </IonCol>
-                <IonCol size='4'>
+                <IonCol style={{ height: 60, paddingTop: 10 }} size='4'>
                   <IonText>
-                    <b>21</b>
+                    <b style={{ fontSize: 25 }}>21</b>
                   </IonText>
                   <br />
                   <IonText>November</IonText>
